@@ -1,0 +1,30 @@
+.bg-light-orange {
+    background: #ff7a4d;
+}
+
+.m-mi-login {
+    font-family: 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    font-size: 12px;
+    width: 380px;
+}
+
+.m-mi-login a {
+    color: #8d8d8d;
+}
+
+.m-mi-login input {
+    border-radius: 5px;;
+    width: 96%;
+    padding: 5px 2%;
+    border: none;
+    border-top: 1px solid #ccc;;
+}
+
+.m-mi-login input:first-child {
+    border-top: none;
+}
+
+.m-mi-login button {
+
+    border: none;
+}

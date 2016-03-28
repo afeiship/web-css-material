@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../dest/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../src/libs/font-awesome-4.0.3/css/font-awesome.css" />
+    <style type="text/css">
+        .testForm{
+            margin:20px;
+        }
+        .testForm label{
+            display: inline-block;
+            width:120px;
+        }
+
+        .testDiv{
+            height:220px;
+            border:1px solid;
+        }
+        .testDiv>div{
+            width:300px;
+            border:1px solid #f00;
+        }
+    </style>
+</head>
+<body>
+    <form class="testForm">
+        <p class="vam_">
+            <label for="username">Username:</label>
+            <input id="username" type="text" />
+            <span class="error">error message</span>
+        </p>
+        <p class="vam_">
+            <label for="password">Password:</label>
+            <input id="password" type="text" />
+            <span class="error">error message</span>
+        </p>
+        <p class="vam_" style="height: 30px;line-height: 30px;"><strong>支出：</strong><span class="c-orange">$0.00</span><span class="r"><img
+                src="http://placehold.it/9/9" alt="" class="vim"/></span></p>
+    </form>
+
+    <div class="testDiv vam_">
+        <div style="height:100px;">Test verticla-alignmiddeld</div>
+        <div style="height: 200px;">Test verticla-alignmiddeld</div>
+        <div style="height: 30px;">Test verticla-alignmiddeld</div>
+        <s class="_fix"></s>
+    </div>
+
+
+    <div class="testDiv ls0-g_ vam_">
+        <div style="height:100px;">Test verticla-alignmiddeld</div>
+        <div style="height: 200px;">Test verticla-alignmiddeld</div>
+        <div style="height: 30px;">Test verticla-alignmiddeld</div>
+        <s class="fix_"></s>
+    </div>
+
+    <p class="clfix" style="line-height: 30px; border:1px solid;">
+            <span class="l">
+                <strong>通勤时间：</strong>
+                <em>2小时</em>
+            </span>
+            <span class="r">
+                <i class="fa fa-inbox"></i>
+                <em>联系我</em>
+            </span>
+    </p>
+
+
+
+</body>
+</html>

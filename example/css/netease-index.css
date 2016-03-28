@@ -1,0 +1,73 @@
+/**netease-index Start**/
+body {
+  font-size: 12px;
+}
+a {
+  color: #666;
+}
+a:hover {
+  color: #ba2636;
+}
+.w960 {
+  width: 960px;
+}
+.bg-f6 {
+  background: #f6f6f6;
+}
+.bg-e8 {
+  background: #E8E8E8;
+}
+.bg-dark-blue {
+  background: #206f96;
+}
+.hlh60 {
+  height: 60px;
+  line-height: 60px;
+}
+.layt,
+[class*='lyt-'] {
+  background: url(../images/layout.png) no-repeat;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.m-global-nav {
+  margin-left: -8px;
+}
+.m-global-nav span + span {
+  border-left: 1px dashed #ccc;
+  padding-left: 10px;
+}
+.m-global-nav p {
+  line-height: 20px;
+}
+.m-global-nav a {
+  padding: 5px 8px;
+}
+.lyt-footer-logo {
+  width: 122px;
+  height: 71px;
+}
+.lyt-header-logo {
+  width: 122px;
+  height: 38px;
+}
+.m-db-line {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #fff;
+}
+.m-ft-sitemap span {
+  width: 150px;
+  height: 150px;
+}
+.m-ft-sitemap span + span:hover {
+  background: #206F96;
+}
+.m-ft-sitemap span + span:hover a {
+  color: #fff;
+}
+.m-footer-wrap {
+  border-top: 1px solid #ccc;
+  padding-bottom: 40px;
+}
+/**netease-index  End**/

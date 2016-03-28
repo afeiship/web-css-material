@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*https://kristinlbradley.wordpress.com/2011/09/15/cross-browser-css-justified-block-list/*/
+        /* set base font-size (customize to suit) */
+        body, .block-list li {font-size: 12px;}
+
+        /* trigger hasLayout in IE */
+        .block-list, .block-list li {zoom: 1;}
+
+        .block-list {
+            font-size: 0 !important; /* remove physical spaces between items */
+            text-align: justify;
+            text-justify: distribute-all-lines; /* distribute items in IE */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        table{
+
+        }
+
+        /* fully justify all items in browsers other than IE */
+        .block-list:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        .block-list li {
+            text-align: left; /* customize to suit */
+            vertical-align: top; /* can customize to suit */
+            display: inline-block;
+            width: 31.3%; /* optional, only need for text content to wrap */
+            margin-bottom: 1em; /* optional, customize to suit */
+        }
+
+        /* IE hacks to make li's line up */
+        *+html .block-list li {display: inline;}
+        * html .block-list li {display: inline;}
+    </style>
+</head>
+<body>
+
+<ul class="block-list">
+    <li>Content</li>
+    <li>Content</li>
+    <li>Content</li>
+    <li>Content</li>
+    <li>Content</li>
+    <li>Content</li>
+    <li>Content</li>
+    <li>Content</li>
+</ul>
+
+</body>
+</html>

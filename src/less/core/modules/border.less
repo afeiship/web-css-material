@@ -1,0 +1,105 @@
+/**border Start**/
+.bdn{
+  border:none;
+}
+.bd0{
+  border:0;
+}
+.bcc{
+  border-collapse: collapse;
+}
+.bd1 {
+  &,
+  &_>*,
+  &- *{
+    border: 1px solid;
+  }
+}
+
+.bdt1{
+  &,
+  &_>*,
+  &- *{
+    border-top: 1px solid;
+  }
+}
+
+.bdr1{
+  &,
+  &_>*,
+  &- *{
+    border-right: 1px solid;
+  }
+}
+
+.bdb1{
+  &,
+  &_>*,
+  &- *{
+    border-bottom: 1px solid;
+  }
+}
+.bdl1{
+  &,
+  &_>*,
+  &- *{
+    border-left: 1px solid;
+  }
+}
+
+//border style:
+.bds-solid{
+  border-style: solid;
+}
+
+.bds-dashed{
+  border-style: dashed;
+}
+
+.bds-dot{
+  border-style: dotted;
+}
+
+//border width:
+.bdw {
+    .for(@border-list); .-each(@value) {
+      &@{value} {
+        border-width: ~"@{value}px";
+      }
+    }
+}
+
+.bdtw {
+    .for(@border-list); .-each(@value) {
+      &@{value} {
+        border-top-width: ~"@{value}px";
+      }
+    }
+}
+
+.bdrw {
+    .for(@border-list); .-each(@value) {
+      &@{value} {
+        border-right-width: ~"@{value}px";
+      }
+    }
+}
+
+.bdbw {
+    .for(@border-list); .-each(@value) {
+      &@{value} {
+        border-bottom-width: ~"@{value}px";
+      }
+    }
+}
+
+.bdlw {
+    .for(@border-list); .-each(@value) {
+      &@{value} {
+        border-left-width: ~"@{value}px";
+      }
+    }
+}
+
+
+/**border  End**/

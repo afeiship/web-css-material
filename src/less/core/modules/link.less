@@ -1,0 +1,11 @@
+/**color Start**/
+.link-{
+  .for(@color-map); .-each(@color,@name,@item){
+    &@{name},
+    &@{name}_>a{
+      color:@color;
+    }
+  }
+}
+
+/**color  End**/

@@ -1,0 +1,25 @@
+/**width Start**/
+.w0 {
+  width: 0;
+}
+.w-p {
+  .for(@width-percent); .-each(@value) {
+    @pValue:@value*10;
+    &@{value} {
+      &,
+      &_ >*,
+      &- *{
+        width: ~"@{pValue}%";
+      }
+    }
+  }
+}
+
+
+.max-w100{
+  max-width: 100%;
+}
+.min-w100{
+  min-width: 100%;
+}
+/**width  End**/

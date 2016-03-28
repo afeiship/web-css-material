@@ -1,0 +1,60 @@
+/**height Start**/
+.h-p {
+  .for(@height-percent); .-each(@value) {
+    @pValue:@value*10;
+    &@{value} {
+      &,
+      &_ >*,
+      &- *{
+        height: ~"@{pValue}%";
+      }
+    }
+  }
+}
+
+.h {
+  .for(@height-list); .-each(@value) {
+    &@{value} {
+      &,
+      &_ >*,
+      &- *{
+        height: ~"@{value}px";
+      }
+    }
+  }
+}
+
+.lh {
+  .for(@height-list); .-each(@value) {
+    &@{value} {
+      &,
+      &_ >*,
+      &- *{
+        line-height:~"@{value}px";
+      }
+    }
+  }
+}
+
+.hlh {
+  .for(@height-list); .-each(@value) {
+    &@{value} {
+      &,
+      &_ >*,
+      &- *{
+        .hlh(~"@{value}px");
+      }
+    }
+  }
+}
+
+.max-h100{
+  max-height: 100%;
+}
+
+.min-h100{
+  min-height: 100%;
+}
+
+
+/**height  End**/

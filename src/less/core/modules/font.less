@@ -1,0 +1,35 @@
+/**font Start**/
+.b {
+  font-weight: bold;
+}
+
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fbd-font{
+  font:@body-font-size/@body-line-height @body-font-family;
+}
+
+.fbd-size {
+  font-size: @body-font-size;
+}
+
+.fbd-lh{
+  line-height: @body-line-height;
+}
+
+.fbd-family {
+  font-family: @body-font-family;
+}
+
+.f {
+    .for(@font-list); .-each(@value) {
+        &@{value} {
+            font-size: ~"@{value}px";
+        }
+    }
+}
+
+/**font  End**/

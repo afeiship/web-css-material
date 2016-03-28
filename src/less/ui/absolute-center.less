@@ -1,0 +1,19 @@
+/**absolute-center Start**/
+.abs-center,
+.abs-center-x,
+.abs-center-y{
+  position: absolute;
+  margin:auto;
+}
+
+.abs-center {
+  &:extend(.trbl0);
+  &-x{
+    &:extend(.lr0);
+  }
+  &-y{
+    &:extend(.tb0);
+  }
+}
+
+/**absolute-center  End**/

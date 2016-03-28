@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../dest/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../src/libs/font-awesome-4.0.3/css/font-awesome.css" />
+    <style type="text/css">
+        .testForm{
+            margin:20px;
+        }
+        .testForm label{
+            display: inline-block;
+            width:120px;
+        }
+        .testDiv{
+            height:150px;
+            border:1px solid;
+        }
+        .testDiv>div,
+        .testDiv>span{
+            width:300px;
+            border:1px solid #f00;
+        }
+    </style>
+</head>
+<body>
+    <form class="testForm f12 lh30">
+        <p class="vim_">
+            <label for="username">Username:</label>
+            <input id="username" type="text" />
+            <span class="c-red error">error message</span>
+        </p>
+        <p class="vim_">
+            <label for="password">Password:</label>
+            <input id="password" type="text" />
+            <span class="error">error message</span>
+        </p>
+        <p class="vim_ clfix px10 bd1-solid"><span class="r bd1-solid">test</span><strong>支出：</strong><span class="c-orange">$0.00</span></p>
+    </form>
+
+    <div class="testDiv ls0_ vim_">
+        <div style="height:100px;">Test verticla-alignmiddeld</div>
+        <div style="height: 120px;">Test verticla-alignmiddeld</div>
+        <div style="height: 30px;">Test verticla-alignmiddeld</div>
+        <s class="_fix"></s>
+    </div>
+
+
+    <div class="testDiv ls0 vim_">
+        <div class="ls0-u" style="height:100px;">Test verticla-alignmiddeld</div>
+        <div class="ls0-u" style="height: 120px;">Test verticla-alignmiddeld</div>
+        <div class="ls0-u" style="height: 30px;">Test verticla-alignmiddeld</div>
+        <s class="_fix"></s>
+    </div>
+
+
+
+    <div class="testDiv dib-g vim_">
+        <div style="height:100px;" class="bg-green dib-u">Test verticla-alignmiddeld-yui3</div>
+        <div style="height: 120px;" class="dib-u">Test verticla-alignmiddeld</div>
+        <div style="height: 30px;" class="dib-u">Test verticla-alignmiddeld</div>
+        <s class="_fix"></s>
+    </div>
+
+
+    <div class="testDiv dib-g vim-center">
+        <div style="height:100px;" class="bg-green ">Test verticla-vim-center_-yui3</div>
+        <div style="height: 120px;" class="">Test verticla-vim-center_</div>
+        <div style="height: 30px;" class="">Test vim-center_-Test </div>
+    </div>
+
+    <p class="clfix bd1-solid" style="line-height: 30px; border:1px solid;">
+            <span class="l">
+                <strong>通勤时间：</strong>
+                <em>2小时</em>
+            </span>
+            <span class="r">
+                <i class="fa fa-inbox"></i>
+                <em>联系我</em>
+            </span>
+    </p>
+
+    <div class="dib-g h30_">
+        <div class="dib-u-1-4 dib-u-md-1-2 bg-red">
+            Item1
+        </div>
+        <div class="dib-u-1-4 dib-u-md-1-2 bg-green">
+            Item1
+        </div>
+        <div class="dib-u-1-4 dib-u-md-1-2 bg9">
+            Item1
+        </div>
+        <div class="dib-u-1-4 dib-u-md-1-2 bg3">
+            Item1
+        </div>
+    </div>
+
+
+
+</body>
+</html>

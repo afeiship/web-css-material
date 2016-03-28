@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../dest/css/style.css"/>
+    <style type="text/css">
+        .test1{
+            background: #eee;
+        }
+        .test1>li,
+        .test1>span,
+        .test1>div{
+            width:200px;
+            height: 30px;
+            background: #000;
+            color:#fff;
+        }
+
+        .test2{
+            width:400px;
+        }
+        .test2 a{
+            width:90px;
+            height:108px;
+        }
+        .test2 a p{
+            text-align: center;
+            border:1px solid #efefef;
+            height: 100%;
+        }
+
+        /*
+        值得一提的是：
+        这里justify-list应该注意
+        子级元素，应该采用原本是就是inline元素的元素提当。
+        default是block元素，在IE7下会有许多无法修复的Bug
+
+        这里用:after，即可以避开IE7不需要加一行fix元素的问题了
+
+        研究这个问题，花了1整天的时间，其实很早就知道这个区别，只是一直没有去试
+        */
+    </style>
+</head>
+<body>
+    <ul class="justify-list_ ls0_ test1 ie7-bug">
+        <li>Just a test</li>
+        <li>Just a test</li>
+        <li>Just a test</li>
+    </ul>
+
+    <div class="justify-list_ test1">
+        <span>Just a test</span>
+        <span>Just a test</span>
+        <span>Just a test</span>
+     </div>
+    <p class="blank20"></p>
+    <div class="justify-list_ ls0_ test1">
+        <span>Just a test</span>
+        <span>Just a test</span>
+        <span>Just a test</span>
+        <span>Just a test</span>
+        <span>Just a test</span>
+        <span>Just a test</span>
+    </div>
+
+    <h1>普通空白字符</h1>
+    <div class="justify-list_">
+        <span>item1</span>&nbsp;<span>item2</span>&nbsp;<span>item3</span>
+    </div>
+
+    <h1>瘦小的空格</h1>
+    <div class="justify-list_">
+        <span>item1</span>&thinsp;<span>item2</span>&thinsp;<span>item3</span>
+    </div>
+
+
+    <h1>零宽度空格</h1>
+    <div class="justify-list_">
+        <span>item1</span>&#8203;<span>item2</span>&#8203;<span>item3</span>
+    </div>
+
+
+
+
+    <h1>零宽度空格-#10</h1>
+    <div class="justify-list_">
+        <span>item1</span>&#10;<span>item2</span>&#10;<span>item3</span>
+    </div>
+
+
+    <p class="blank20"></p>
+    <div class="justify-list_ ls0_ bd1-dash" >
+        <div class="bg3">Just a test</div>
+        <div class="bg0">Just a test</div>
+        <div class="bg-green">Just a test</div>
+    </div>
+<p class="blank10"></p>
+
+    <div class="justify-list_ auto ls0_ test2">
+        <a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>&#10;<a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>&#10;<a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>
+        <a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>
+        <a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>
+        <a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>
+        <a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>
+        <a href="#">
+            <p class="vim_ blank"><s class="_fix"></s></p>
+        </a>
+    </div>
+    <h1>压缩后的代码,justify 失效</h1>
+    <div class="justify-list_">
+        <a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a><a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a><a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a><a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a>
+    </div>
+<p class="blank20"></p>
+
+    <h1>压缩后的代码,justify 失效----利用换行字符,解决这个问题</h1>
+    <div class="justify-list_ ls0">
+        <a href="#">
+            <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a>&#10;<a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a>&#10;<a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a>&#10;<a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a>&#10;<a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a>&#10;<a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a>
+    </div>
+
+    <p class="blank20"></p>
+    <h1>压缩后的代码,justify 失效----利用换行字符,更加完美的方式(目前还没有想出来:()</h1>
+    <style type="text/css">
+        /*
+        http://www.fileformat.info/info/unicode/char/000A/index.htm
+&#0129;
+http://stackoverflow.com/questions/15841109/optional-line-breaking-html-entity-that-is-always-invisible
+http://superuser.com/questions/156640/how-can-i-type-u200b-character
+https://about.zoosk.com/en/engineering-blog/smart-wrapping-vs/
+        */
+        .txx a:before {
+            content: "\000A";
+        }
+
+    </style>
+    <div class="justify-list_ txx">
+        <a href="#">
+            <p class="vim_">&#0129;<img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+        </a><!--&nbsp;--><a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a><!--&nbsp;--><a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a><!--&nbsp;--><a href="#">
+        <p class="vim_"><img src="../images/80.gif" alt=""/><s class="_fix"></s></p>
+    </a>
+    </div>
+
+
+<p class="blank20"></p>
+<p class="blank20"></p>
+<p class="blank20"></p>
+<p class="blank20"></p>
+
+
+
+</body>
+</html>
