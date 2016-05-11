@@ -1,7 +1,10 @@
 {
   "name": "web-css-material",
   "description": "web css libray for ie7+ browser",
-  "main": "dist/web-css-material.js",
+  "main": [
+    "dist",
+    "src"
+  ],
   "authors": [
     "afei"
   ],
