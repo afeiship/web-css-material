@@ -23,6 +23,7 @@ var config = {
   src: './src',
   dist: './dist/css'
 };
+
 gulp.task('clean', function () {
   return del(config.dist);
 });
@@ -35,7 +36,7 @@ gulp.task('fonts',function(){
 
 
 gulp.task('sass', function () {
-  return gulp.src(config.src + '/sass/style.scss')
+  return gulp.src(config.src + '/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(config.sassOptions).on('error', sass.logError))
     .pipe(autoprefixer('last 4 version'))
