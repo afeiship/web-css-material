@@ -1,7 +1,7 @@
 /**shape Start**/
 .radius{
-  @each $key,$value in $radius-list{
-    &-#{$key}{
+  @each $value in $radius-list{
+    &-#{$value}{
       border-radius: #{$value}px;
     }
   }

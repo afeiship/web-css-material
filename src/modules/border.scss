@@ -11,4 +11,98 @@
 .bcc{
   border-collapse: collapse;
 }
+
+
+.bdn{
+  border:none;
+}
+.bd0{
+  border:0;
+}
+.bcc{
+  border-collapse: collapse;
+}
+.bd1 {
+  &,
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    border: 1px solid;
+  }
+}
+
+.bdt1{
+  &,
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    border-top: 1px solid;
+  }
+}
+
+.bdr1{
+  &,
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    border-right: 1px solid;
+  }
+}
+
+.bdb1{
+  &,
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    border-bottom: 1px solid;
+  }
+}
+.bdl1{
+  &,
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    border-left: 1px solid;
+  }
+}
+
+//border style:
+.bds-solid{
+  border-style: solid;
+}
+
+.bds-dashed{
+  border-style: dashed;
+}
+
+.bds-dot{
+  border-style: dotted;
+}
+
+//border width:
+.bdw {
+  @each $value in $border-list{
+    border-width:#{$value}px;
+  }
+}
+
+.bdtw {
+  @each $value in $border-list{
+    border-top-width:#{$value}px;
+  }
+}
+
+.bdrw {
+  @each $value in $border-list{
+    border-right-width:#{$value}px;
+  }
+}
+
+.bdbw {
+  @each $value in $border-list{
+    border-bottom-width:#{$value}px;
+  }
+}
+
+.bdlw {
+  @each $value in $border-list{
+    border-left-width:#{$value}px;
+  }
+}
+
 /**border  End**/

@@ -4,7 +4,7 @@
 
 .m-mi-login {
     font-family: 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
-    font-size: 12px;
+    /*font-size: 12px;*/
     width: 380px;
 }
 
@@ -15,7 +15,7 @@
 .m-mi-login input {
     border-radius: 5px;;
     width: 96%;
-    padding: 5px 2%;
+    padding: 10px 2%;
     border: none;
     border-top: 1px solid #ccc;;
 }

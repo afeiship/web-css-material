@@ -1,0 +1,39 @@
+/**padding Start**/
+
+
+@each $value in $padding-list {
+  .p#{$value}{
+    padding:toEm($value);
+  }
+
+  @each $key, $val in $padding-direction-map {
+    @if $key==px{
+      .#{$key}#{$value} {
+        &,
+        &_ > * {
+          @include paddingX($value);
+        }
+      }
+    }
+    @else if $key==py{
+      .#{$key}#{$value} {
+        &,
+        &_ > * {
+          @include paddingY($value);
+        }
+      }
+    }
+    @else{
+      .#{$key}#{$value} {
+        &,
+        &_ > * {
+          padding: {
+            #{$val}: #{$value}px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**padding  End**/
