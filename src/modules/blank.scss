@@ -1,0 +1,18 @@
+/**blank Start**/
+.blank {
+  display: block;
+  font-size: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+
+.blank {
+  @each $i in $blank-list{
+    &-#{$i}{
+      height:#{$i}px;
+      @extend .blank;
+    }
+  }
+}
+/**blank  End**/

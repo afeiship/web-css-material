@@ -1,0 +1,11 @@
+/**font-size Start**/
+@mixin font-size-generator($inFontMap){
+  $from:map_get($inFontMap,'from');
+  $to:map_get($inFontMap,'to');
+  @for $i from $from through $to{
+    .f#{$i}{
+      font-size:#{toEm($i)};
+    }
+  }
+}
+/**font-size  End**/

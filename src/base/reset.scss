@@ -1,0 +1,113 @@
+/**reset Start**/
+*,
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font: $body-font-size/$body-line-height $body-font-family;
+}
+
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, hr,
+pre, form, fieldset, input, textarea, button,
+p, blockquote, th, td, s, b,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+/*html5 tag support*/
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary {
+  display: block;
+}
+
+fieldset, img, abbr, acronym, hr {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+caption, th {
+  text-align: left;
+}
+
+address, caption, cite, dfn, th, var, i, s, em {
+  font-style: normal;
+  font-weight: normal;
+}
+
+s, ins {
+  text-decoration: none;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-size: $header-font-size;
+}
+
+h4, h5, h6 {
+  font-weight: normal;
+}
+
+ul, ol, li {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+hr {
+  display: block;
+  height: 0;
+  border-top: 1px solid #cccccc;
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/**reset  End**/

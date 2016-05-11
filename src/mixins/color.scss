@@ -1,0 +1,9 @@
+/**color Start**/
+@mixin color-generator($inColorMap){
+  @each $name,$color in $inColorMap{
+    .c-#{$name}{
+      color:#{$color};
+    }
+  }
+}
+/**color  End**/
