@@ -1,0 +1,11 @@
+/**layout-lr-auto Start**/
+.layout-lr-auto{
+  .left{
+    float: left;
+  }
+  .right{
+    overflow: hidden;
+    zoom:1;
+  }
+}
+/**layout-lr-auto  End**/

@@ -1,0 +1,43 @@
+/**width Start**/
+.w0 {
+  width: 0;
+}
+
+.wp {
+  @for $i from 1 through $wp-max {
+    &-#{$i} {
+      &,
+      &_ > * {
+        @include wp($i);
+      }
+    }
+  }
+}
+
+.w1 {
+  @for $i from 1 through $w1-max {
+    &-#{$i} {
+      &,
+      &_ > * {
+        @include w1($i);
+      }
+    }
+  }
+}
+.w100{
+  width:100%;
+}
+.h100{
+  height:100%;
+}
+.wh100{
+  @extend .w100,.h100;
+}
+.max-w100 {
+  max-width: 100%;
+}
+
+.min-w100 {
+  min-width: 100%;
+}
+/**width  End**/

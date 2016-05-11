@@ -1,0 +1,48 @@
+/**margin Start**/
+.auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.m0a {
+  margin: 0 auto;
+}
+
+
+
+@each $value in $margin-list {
+  @each $key, $val in $margin-direction-map {
+    @if $key==mx{
+      .#{$key}#{$value} {
+        &,
+        &_ > * {
+          @include marginX($value);
+        }
+      }
+    }
+    @else if $key==my{
+      .#{$key}#{$value} {
+        &,
+        &_ > * {
+          @include marginY($value);
+        }
+      }
+    }
+    @else{
+      .#{$key}#{$value} {
+        &,
+        &_ > * {
+          margin: {
+            #{$val}: #{$value}px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**margin  End**/

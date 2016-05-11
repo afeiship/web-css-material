@@ -1,0 +1,41 @@
+/**margin Start**/
+@mixin marginX($inMargin) {
+  margin:{
+    left:toEm($inMargin);
+    right:toEm($inMargin);
+  }
+}
+
+@mixin marginY($inMargin) {
+  margin:{
+    top:toEm($inMargin);
+    bottom:toEm($inMargin);
+  }
+}
+
+
+
+@mixin mt($inPadding){
+  margin:{
+    top: toEm($inPadding);
+  }
+}
+
+@mixin mr($inPadding){
+  margin:{
+    right: toEm($inPadding);
+  }
+}
+
+@mixin mb($inPadding){
+  margin:{
+    bottom: toEm($inPadding);
+  }
+}
+
+@mixin ml($inPadding){
+  margin:{
+    left: toEm($inPadding);
+  }
+}
+/**margin  End**/

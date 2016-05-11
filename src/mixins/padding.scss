@@ -1,0 +1,40 @@
+/**padding Start**/
+
+@mixin paddingX($inPadding) {
+  padding:{
+    left:toEm($inPadding);
+    right:toEm($inPadding);
+  }
+}
+
+@mixin paddingY($inPadding) {
+  padding:{
+    top:toEm($inPadding);
+    bottom:toEm($inPadding);
+  }
+}
+
+@mixin pt($inPadding){
+  padding:{
+    top: toEm($inPadding);
+  }
+}
+
+@mixin pr($inPadding){
+  padding:{
+    right: toEm($inPadding);
+  }
+}
+
+@mixin pb($inPadding){
+  padding:{
+    bottom: toEm($inPadding);
+  }
+}
+
+@mixin pl($inPadding){
+  padding:{
+    left: toEm($inPadding);
+  }
+}
+/**padding  End**/

@@ -1,0 +1,10 @@
+.full-image {
+  &,
+  &_ > img,
+  &- img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+}

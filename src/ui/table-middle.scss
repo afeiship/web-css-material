@@ -1,0 +1,16 @@
+/**table-middle Start**/
+.table-middle {
+  &,
+  &_>*{
+    @extend .vam,.dtbc;
+  }
+}
+
+.cell{
+  @extend .dtbc;
+  width:2000px;
+  *display:inline-block;
+  *width:auto;
+}
+
+/**table-middle  End**/

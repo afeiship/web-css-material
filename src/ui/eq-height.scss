@@ -1,0 +1,10 @@
+/**eq-height Start**/
+.eq-height {
+  overflow: hidden;
+  & > * {
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+  }
+}
+
+/**eq-height  End**/

@@ -1,0 +1,19 @@
+/**letter-spacing Start**/
+/*
+@Description:
+If you use em as the main unit,this solution is not perfect.
+But you can use the solution justify pictures.
+*/
+.ls0{
+  &,
+  &_{
+    @extend .f-zero;
+    line-height: 0;
+  }
+  &-u,
+  &_>*{
+    @extend .fbd-lh,.fbd-family;
+  }
+}
+
+/**letter-spacing  End**/

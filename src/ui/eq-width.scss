@@ -1,0 +1,9 @@
+/**eq-width Start**/
+.eq-width{
+  @extend .dtb;
+  &>*{
+    @extend .dtbc;
+    width:1%;
+  }
+}
+/**eq-width  End**/

@@ -1,0 +1,8 @@
+.link-{
+  @each $key,$value in $color-map{
+    &#{$key},
+    &#{$key}_ > a{
+      color:$value;
+    }
+  }
+}

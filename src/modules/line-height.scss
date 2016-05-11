@@ -1,0 +1,15 @@
+/**line-height Start**/
+@each $value in $line-height-list{
+  .hlh{
+    &#{$value}{
+      @include hlh($value);
+    }
+  }
+
+  .lh{
+    &#{$value}{
+      line-height:toRem($value);
+    }
+  }
+}
+/**line-height  End**/

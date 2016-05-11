@@ -1,0 +1,52 @@
+/**layout Start**/
+
+.dib{
+  &,
+  &_>*,
+  &- *{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  }
+}
+
+.dtb{
+  display: table;
+}
+
+.dtbr{
+  display: table-row;
+}
+.dtbc{
+  &,
+  &_>*,
+  &- *{
+    display: table-cell;
+    *display: inline-block;
+    *zoom: 1;
+  }
+}
+.db{
+  &,
+  &_>*,
+  &- *{
+    display: block;
+  }
+}
+.dn,
+[hidden]{
+  display: none;
+}
+
+
+.z{
+  &,
+  &_>*,
+  &- *{
+    zoom:1;
+  }
+}
+
+
+
+/**layout  End**/

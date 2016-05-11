@@ -1,0 +1,32 @@
+/**float Start**/
+.l{
+  &,
+  &_>*,
+  &- *{
+    float: left;
+  }
+}
+
+.r{
+  &,
+  &_>*,
+  &- *{
+    float: right;
+  }
+}
+
+
+
+.lfix {
+  @extend .clfix;
+  &_ > * {
+    float: left;
+  }
+}
+.rfix {
+  @extend .clfix;
+  &_ > * {
+    float: right;
+  }
+}
+/**float  End**/

@@ -1,0 +1,14 @@
+/**form Start**/
+.frm-row {
+  @extend .vm_;
+}
+
+.frm-label {
+  @extend .dib;
+}
+
+.frm-none {
+  border: none;
+  background: none
+}
+/**form  End**/
