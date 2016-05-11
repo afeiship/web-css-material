@@ -14,3 +14,6 @@ web css libray for ie7+ browser based on sass
 ##issues:
 + dest is the old dest file
 + dist is the new one.
+
+##resources:
++ http://medialize.github.io/playground.sass.js/
