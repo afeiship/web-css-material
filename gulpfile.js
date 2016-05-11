@@ -17,13 +17,20 @@ var config = {
     outputStyle: 'expanded' /* nested | expanded | compact | compressed */
   },
   src: './src',
-  dist: './dist'
+  dist: './dist/css'
 };
 
 
 gulp.task('clean', function () {
   return del(config.dist);
 });
+
+
+gulp.task('fonts',function(){
+  return gulp.src('./src/fonts/*')
+    .pipe(gulp.dest('./dist/fonts'));
+});
+
 
 gulp.task('sass', function () {
   return gulp.src(config.src + '/style.scss')
@@ -34,6 +41,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(config.dist));
 });
 
+
 gulp.task('default', ['clean'], function () {
-  gulp.start(['sass']);
+  gulp.start(['sass','fonts']);
 });
