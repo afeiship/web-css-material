@@ -1,72 +1,72 @@
 /**align Start**/
 .vat {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     vertical-align: top;
   }
 }
 
 .vam {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     vertical-align: middle;
   }
 }
 
 .vab {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     vertical-align: bottom;
   }
 }
 
 .vatb {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     vertical-align: text-bottom;
   }
 }
 
 .tl {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     text-align: left;
   }
 }
 
 .tc {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     text-align: center;
   }
 }
 
 .tr {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     text-align: right;
   }
 }
 
 .ti2e {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     text-indent: 2em;
   }
 }
 
 .ti0 {
   &,
-  &_>*,
-  &- *{
+  &#{$children} > *,
+  &#{$children_reduce} * {
     text-indent: 0;
   }
 }

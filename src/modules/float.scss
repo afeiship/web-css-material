@@ -1,16 +1,16 @@
 /**float Start**/
 .l{
   &,
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     float: left;
   }
 }
 
 .r{
   &,
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     float: right;
   }
 }
@@ -19,13 +19,13 @@
 
 .lfix {
   @extend .clfix;
-  &_ > * {
+  &#{$children} > * {
     float: left;
   }
 }
 .rfix {
   @extend .clfix;
-  &_ > * {
+  &#{$children} > * {
     float: right;
   }
 }

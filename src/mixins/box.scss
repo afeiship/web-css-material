@@ -1,0 +1,10 @@
+/**box Start**/
+@mixin wh($inWidth,$inHeight){
+  width:toRem($inWidth);
+  height:toRem($inHeight);
+}
+
+@mixin size($inSize){
+  @include wh($inSize,$inSize);
+}
+/**box  End**/

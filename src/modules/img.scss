@@ -1,7 +1,7 @@
 .full-image {
   &,
-  &_ > img,
-  &- img {
+  &#{$children} > img,
+  &#{$children_reduce} img {
     vertical-align: middle;
     max-width: 100%;
     max-height: 100%;

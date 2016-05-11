@@ -2,8 +2,8 @@
 
 .abs{
   &,
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     position: absolute;
   }
 }

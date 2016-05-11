@@ -1,9 +1,8 @@
 /**layout Start**/
-
 .dib{
   &,
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -19,8 +18,8 @@
 }
 .dtbc{
   &,
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     display: table-cell;
     *display: inline-block;
     *zoom: 1;
@@ -28,8 +27,8 @@
 }
 .db{
   &,
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     display: block;
   }
 }
@@ -41,8 +40,8 @@
 
 .z{
   &,
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     zoom:1;
   }
 }

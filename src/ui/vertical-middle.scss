@@ -1,11 +1,11 @@
 /**vertical-middle Start**/
 .vim{
-  &_>*,
-  &- *{
+  &#{$children}>*,
+  &#{$children_reduce} *{
     @extend .vam,.dib;
   }
-  &_>._fix,
-  &- .fix{
+  &#{$children}>._fix,
+  &#{$children_reduce} .fix{
     overflow: hidden;
     width:0;
     height: 100%;
@@ -13,7 +13,7 @@
 }
 
 .vim-center{
-  *zoom: ~'expression(this.runtimeStyle.zoom="1",this.appendChild( document.createElement("feiafter") ).className="after")';
+  //*zoom: ~'expression(this.runtimeStyle.zoom="1",this.appendChild( document.createElement("feiafter") ).className="after")';
   &>*{
     @extend .vam,.dib;
   }
@@ -35,29 +35,30 @@
 }
 
 .vim-center_ > * {
-  &:extend(.vim-center all);
+  //&:extend(.vim-center all);
+  @extend .vim-center;
 }
 
 //extend vertical-align:
 .vam{
-  &_>*,
-  &- *{
-    &:extend(.vam);
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    @extend .vam;
   }
 }
 
 .vat{
-  &_>*,
-  &- *{
-    &:extend(.vat);
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    @extend .vat;
   }
 }
 
 
 .vab{
-  &_>*,
-  &- *{
-    &:extend(.vab);
+  &#{$children}>*,
+  &#{$children_reduce} *{
+    @extend .vab;
   }
 }
 

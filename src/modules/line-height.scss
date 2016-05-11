@@ -8,7 +8,7 @@
 
   .lh{
     &#{$value}{
-      line-height:toRem($value);
+      line-height:toEm($value);
     }
   }
 }
