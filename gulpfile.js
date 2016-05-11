@@ -5,13 +5,17 @@
  */
 
 'use strict';
-
 var gulp = require('gulp');
+var path = require('path');
 var sass = require('gulp-sass');
 var del = require('del');
 var autoprefixer = require('gulp-autoprefixer');
 var debug = require('gulp-debug');
 var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var cssmin = require('gulp-minify-css');
 var config = {
   sassOptions: {
     outputStyle: 'expanded' /* nested | expanded | compact | compressed */
@@ -19,8 +23,6 @@ var config = {
   src: './src',
   dist: './dist/css'
 };
-
-
 gulp.task('clean', function () {
   return del(config.dist);
 });
@@ -33,10 +35,16 @@ gulp.task('fonts',function(){
 
 
 gulp.task('sass', function () {
-  return gulp.src(config.src + '/style.scss')
+  return gulp.src(config.src + '/sass/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(config.sassOptions).on('error', sass.logError))
     .pipe(autoprefixer('last 4 version'))
+    .pipe(gulp.dest(config.dist))
+    .pipe(cssmin())
+    .pipe(rename({
+      suffix: ".min",
+      extname: ".css"
+    }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(config.dist));
 });
