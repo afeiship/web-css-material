@@ -1,11 +1,14 @@
 {
-  "name": "web-css-material",
+  "name": "web-sass-stylekit",
   "version": "0.0.0",
-  "description": "web css libray for ie7+ browser",
-  "homepage": "https://github.com/afeiship/web-css-material",
+  "description": "web css library for ie7+ browser",
+  "homepage": "https://github.com/afeiship/web-sass-stylekit",
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "build": "gulp"
   },
   "license": "MIT",
   "devDependencies": {

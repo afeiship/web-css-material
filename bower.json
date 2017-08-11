@@ -1,6 +1,6 @@
 {
-  "name": "web-css-material",
-  "description": "web css libray for ie7+ browser",
+  "name": "web-sass-stylekit",
+  "description": "web css library for ie7+ browser",
   "main": [
     "dist",
     "src"
@@ -12,7 +12,7 @@
   "keywords": [
     "next"
   ],
-  "homepage": "https://github.com/afeiship/web-css-material",
+  "homepage": "https://github.com/afeiship/web-sass-stylekit",
   "moduleType": [
     "amd"
   ],
