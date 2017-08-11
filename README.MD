@@ -2,7 +2,7 @@
 web css library for ie7+ browser based on sass
 
 
-##usage:
+## usage:
 + npm install
 + gulp
 + use sass `bower install afeiship/web-sass-stylekit`
@@ -11,9 +11,9 @@ web css library for ie7+ browser based on sass
 <link rel="stylesheet" type="text/css" href="<%YOUR_PROJECT_DIR%>/vendor/web-sass-stylekit/dist/css/style.css"/>
 ```
 
-##issues:
+## issues:
 + dest is the old dest file
 + dist is the new one.
 
-##resources:
+## resources:
 + http://medialize.github.io/playground.sass.js/
